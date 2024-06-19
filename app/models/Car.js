@@ -5,7 +5,6 @@ export class Car {
    * @param {{ make: string; model: string; year: number; imgURL: string; mileage: number; price: number; color: string; description: string; runs: boolean; fuelType: string; hasCleanTitle: boolean; dateListed: string }} data
    */
   constructor(data) {
-    debugger
     this.id = generateId()
     // if there is no dateListed in the object, we create a new Date, otherwise we create a new Date using the date stored on the object
     this.dateListed = data.dateListed == undefined ? new Date() : new Date(data.dateListed)

@@ -1,4 +1,5 @@
 import { Car } from './models/Car.js'
+import { House } from './models/House.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -62,6 +63,40 @@ class ObservableAppState extends EventEmitter {
       fuelType: 'oats',
       description: 'RIP in the jalopy jungle',
       color: '#8c9197'
+    }),
+  ]
+  houses = [
+    new House({
+      name: 'Overpriced House',
+      year: 2020,
+      imgURL: 'https://photos.zillowstatic.com/fp/7def65e68c1612694e2d47dae36cc7f3-cc_ft_1536.webp',
+      price: 594990,
+      description: 'Beautiful Stunning House',
+      bedrooms: 3,
+      bathrooms: 4,
+      sqft: 2900,
+
+    }),
+    new House({
+      name: 'The Old Dog',
+      imgURL: 'https://images.unsplash.com/photo-1617546127542-eb0dd8bdd52f?q=80&w=3544&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      price: 200000,
+      description: 'Cant Go Wrong With This Beaut',
+      bedrooms: 4,
+      bathrooms: 5,
+      sqft: 3400,
+
+    }),
+    new House({
+      name: 'The Picture Perfect',
+      year: 2023,
+      imgURL: 'https://images.unsplash.com/photo-1566908829550-e6551b00979b?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      price: 1600000,
+      description: 'Good Luck Affording This One',
+      bedrooms: 8,
+      bathrooms: 12,
+      sqft: 5000,
+
     }),
   ]
 }
