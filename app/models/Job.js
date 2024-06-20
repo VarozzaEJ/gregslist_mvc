@@ -8,11 +8,12 @@ export class Job {
         this.description = data.description
         this.company = data.company
         this.name = data.name
+        this.hired = data.hired
     }
 
     get cardHTMLTemplate() {
         return `
-        <div class="col-12 mb-3">
+        <div class="col-12 mb-3" id="background">
             <div class="car-card shadow">
                 <div class="row">
                     <div class="col-12 col-md-4 ">
@@ -28,7 +29,7 @@ export class Job {
                             <p>${this.description}</p>
 
                             <div class="text-end">
-                                <button class="btn btn-success" type="button">Apply</button>
+                                <button onclick="app.JobsController.applyForJob()" class="btn btn-success" type="button">Apply</button>
                             </div>
                         </div>
                     </div>
@@ -36,5 +37,10 @@ export class Job {
             </div>
         </div>
         `
+    }
+    get backgroundHTMLTemplate() {
+        return `
+            <div class="container" id="background"></div>        
+            `
     }
 }

@@ -1,5 +1,5 @@
 import { AppState } from "../AppState.js";
-import { setHTML } from "../utils/Writer.js";
+import { setHTML, setText } from "../utils/Writer.js";
 
 
 export class JobsController {
@@ -16,5 +16,15 @@ export class JobsController {
         setHTML('jobListings', innerHTMLString)
     }
 
-
+    applyForJob() {
+        // const jobs = AppState.jobs
+        // let HTML = `<div class="container" id="background"></div>`
+        // let hiredEmployee = jobs.find((jobs) => jobs.hired == 'True')
+        if (Math.random() >= 0.5) {
+            // hiredEmployee.hired = 'True'
+            window.alert("Yippee you got the job 😀")
+        } else {
+            window.alert("You didn't get the job 😕")
+        }
+    }
 }

@@ -107,21 +107,24 @@ class ObservableAppState extends EventEmitter {
       name: "Software Developer",
       company: 'Google',
       salary: "$50000 - $150000",
-      description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veritatis ullam mollitia sit perspiciatis totam eligendi commodi, debitis earum alias!`
+      description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veritatis ullam mollitia sit perspiciatis totam eligendi commodi, debitis earum alias!`,
+      hired: 'False'
     }),
     new Job({
       imgURL: 'https://images.unsplash.com/photo-1570063578733-6a33b69d1439?q=80&w=3548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: "Software Engineer",
       company: 'Microsoft',
       salary: "$100000 - $250000",
-      description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veritatis ullam mollitia sit perspiciatis totam eligendi commodi, debitis earum alias!`
+      description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veritatis ullam mollitia sit perspiciatis totam eligendi commodi, debitis earum alias!`,
+      hired: 'False'
     }),
     new Job({
       imgURL: 'https://images.unsplash.com/photo-1585184394271-4c0a47dc59c9?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: "Software God",
       company: 'Apple',
       salary: "$250000 - $500000",
-      description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veritatis ullam mollitia sit perspiciatis totam eligendi commodi, debitis earum alias!`
+      description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veritatis ullam mollitia sit perspiciatis totam eligendi commodi, debitis earum alias!`,
+      hired: 'False'
     }),
 
   ]
