@@ -33,7 +33,7 @@ class HousesService {
     }
 
     loadHouses() {
-        AppState.houses = loadState('houses', House)
+        AppState.houses = loadState('houses', [House])
     }
 
 }

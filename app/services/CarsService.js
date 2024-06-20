@@ -40,7 +40,7 @@ class CarsService {
 
   loadCars() {
     // first argument is where we are pulling data out of, second argument is what we want to turn the data into
-    AppState.cars = loadState('cars', Car) // 💂 cars!!!!!!!!!
+    AppState.cars = loadState('cars', [Car]) // 💂 cars!!!!!!!!!
   }
 }
 
