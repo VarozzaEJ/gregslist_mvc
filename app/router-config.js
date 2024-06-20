@@ -1,6 +1,7 @@
 import { CarsController } from "./controllers/CarsController.js";
 import { ExamplesController } from "./controllers/ExamplesController.js";
 import { HousesController } from "./controllers/HousesController.js";
+import { JobsController } from "./controllers/JobsController.js";
 import { Router } from "./utils/Router.js";
 
 
@@ -25,7 +26,7 @@ export const router = new Router([
   },
   {
     path: '#/jobs',
-    controller: [JobsController],
+    controllers: [JobsController],
     view: 'app/views/JobsView.html'
   }
 ])
